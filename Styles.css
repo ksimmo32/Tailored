@@ -1,0 +1,472 @@
+.homescreen {
+    height: auto;
+    width: auto;
+    position: relative;
+    z-index: 0;
+    overflow: hidden;
+}
+.homescreen::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url('HS2.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.5; /* Adjust as needed */
+    z-index: 0;
+}
+.homescreen > * {
+    position: relative;
+    z-index: 1;
+}
+body{
+    font-family: sf pro;
+    background-color: #000000;
+    box-sizing: border-box;
+    line-height: 1.6;
+    margin: 0;
+    letter-spacing: .8px;
+}
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+.navbar {
+    display: flex;
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 24px;
+    text-decoration: none;
+    padding-left: 48px;
+    padding-top: 36px;
+    padding-bottom: 36px;
+   
+
+}
+.navbar .nav-end {
+    margin-left: auto;
+    padding-right: 60px;
+}
+.navbar a:hover {
+    color: #590b3b;
+}
+.navbar a {
+    text-decoration: none;
+    color: #ffeed0;
+    font-size: 1.15rem;
+    font-weight: 500;
+}
+.heroSection {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    text-align: left;
+    justify-content: flex-start;
+    height: 87vh;
+    border: 0px solid red;
+    padding-left: 36px;
+}
+.heroTextContainer {
+    justify-content: flex-start;
+    align-items: left;
+    margin-top: 220px;
+}
+.heroTitle {
+    font-size: 3rem;
+    margin-bottom: 16px;
+    font-weight: 900;
+    color: #ffeed0;
+
+}
+.buildYourBowlBtn1 {
+    background-color:   #9bee17;
+    color: #000000;
+    border: none;
+    border-radius: 4px;
+    padding: 12px 36px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    margin-top: 15px;
+    max-width: 400px;
+    max-height: 80px;
+}
+.buildYourBowlBtn1 :hover {
+    color: #f1f151;
+}
+.heroDescription {
+    font-size: 1.2rem;
+    color: #ffeed0;
+    max-width: 400px;
+
+}
+.welcomeSection {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+    background-color: #590b3b;
+    color: #ffeed0;
+    height: 100vh;
+    width: auto;
+}
+.welcomeTextContainer {
+    max-width: 600px;
+    text-align: center;
+    font-weight: 400px;
+}
+.buildYourBowlSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: auto;
+    background-color: #ffeed0;
+    color: #590b3b;
+    min-height: 100vh;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+}
+.buildYourBowlTextContainer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+.buildYourBowlSubtitle {
+    font-size: 1.4rem;
+    margin-bottom: 0px;
+    font-weight: 400;
+    margin-top: 2vh;
+}
+.buildYourBowlTitle {
+    font-size: 2.5rem;
+    margin-top: -8px;
+    font-weight: 600;
+    color: #590b3b;
+}
+.bybBtn {
+    background-color: #590b3b;
+    color: #ffeed0;
+    border: none;
+    border-radius: 4px;
+    padding: 12px 36px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    margin-top: -8px;
+    margin-bottom: 60px;
+    max-width: 220px;
+    max-height: 80px;
+    align-items: center;
+}
+.bybBtn:hover {
+    background-color: #9bee17;
+    color: #ffff;
+}
+.buildYourBowlCards,
+.bybCardRow {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.buildYourBowlCards {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-top: 20px;
+}
+.bybCardRow {
+    display: flex;
+    justify-content: flex-start;
+    gap: 2vw;
+    flex-direction: row;
+}
+.bybCard1 h2, .bybCard1 h3,
+.bybCard2 h2, .bybCard2 h3,
+.bybCard3 h2, .bybCard3 h3,
+.bybCard4 h2, .bybCard4 h3 {
+  text-align: left;
+}
+
+.card {
+    position: relative;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: left;
+    background-size: contain;
+    background-position: center;
+    display: flex;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    height: 60vh;
+    width: 20vw;
+    max-height: auto;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+}
+.card:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+    background-image: none;
+    background-color: #590b3b;
+    
+}
+.bybCard1 {
+    background: url('1.jpg');
+}
+
+.bybCard2 {
+    background: url('2.jpg');
+}
+
+.bybCard3 {
+    background: url('3.jpg');
+}
+
+.bybCard4 {
+    background: url('4.jpg');
+}
+
+.card-content {
+    padding-left: 20px;
+    padding-top: 10px;
+    color: white;
+    text-align: left;
+}
+
+.card h3 {
+    font-size: 1.4rem;
+    font-weight: 500;
+    margin-bottom: 1px;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.card h2 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin: 0;
+}
+
+/* Mobile styles */
+@media (max-width: 800px) {
+    .bybCardRow {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+            
+    .card {
+        width: 80vw;
+        height: 400px;
+        max-width: 100vw;
+        min-width: 500px;
+        margin: 0 auto 20px auto;
+    }
+}
+
+/* For very small screens */
+@media (max-width: 600px) {
+    .bybCardRow {
+        flex-direction: column;
+        align-items: center;
+        gap: 2vh;
+    }
+    .card {
+        width: 95vw;
+        min-width: 250px;
+    }
+            
+    .card h3 {
+        font-size: 1.2rem;
+    }
+            
+    .card h2 {
+        font-size: 1.6rem;
+    }
+}
+
+
+.signatureBowlsSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: top;
+    background-color: #ffeed0;
+    color: #590b3b;
+    height: 100vh;
+
+    padding-top: 3vh;
+    padding-bottom: 5vh;
+}
+.signatureBowlsTextContainer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+.signatureBowlsSubtitle {
+    font-size: 1.3rem;
+    margin-bottom: 0px;
+    font-weight: 400;
+    margin-top: 5px;
+}
+.signatureBowlsTitle {
+    font-size: 2.5rem;
+    margin-top: -10px;
+    font-weight: 600;
+    color: #590b3b;
+}
+.signatureBowlsCardRow {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 20px;
+    padding-left: 36px;
+}
+.sbcard {
+    position: relative;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: left;
+    background: #fff;
+    background-size: contain;
+    background-position: center;
+    display: flex;
+    border-radius: 20px;
+    height: 60vh;
+    width: 20vw;
+    padding-top: 0%;
+    padding-left: 1%;
+    padding-right: 1%;
+    max-height: auto;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+}
+.sbcard:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+    background-color: rgb(255, 255, 255);
+}
+.sbcard-content {
+    padding-left: 5px;
+    padding-top: 0px;
+    color: #590b3b;
+    text-align: left;
+}
+.sbcard-content p {
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 0px;
+    color: rgba(89, 11, 59, 0.9);
+
+}
+.sbcard-content h1 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #590b3b;
+    margin: 0;
+}
+.bowlImage {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    margin-top: 10px;
+}
+.viewMoreBtn {
+    background-color: #590b3b;
+    color: #ffeed0;
+    border: none;
+    border-radius: 4px;
+    padding: 12px 36px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    margin-top: 2%;
+    max-width: 220px;
+    max-height: 80px;
+    align-items: center;
+}
+/* Mobile styles */
+@media (max-width: 800px) {
+    .signatureBowlsCardRow {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+            
+    .sbcard {
+        width: 80vw;
+        height: 400px;
+        max-width: 100vw;
+        min-width: 60vw;
+        margin: 0 auto 20px auto;
+    }
+}
+/* For very small screens */
+@media (max-width: 600px) {
+    .signatureBowlsCardRow {
+        flex-direction: column;
+        align-items: center;
+        gap: 2vh;
+    }
+    .sbcard {
+        width: 95vw;
+        min-width: 90vw;
+    }
+            
+    .sbcard-content h1 {
+        font-size: 1.6rem;
+    }
+}
+
+
+
+.aboutMeSection {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #590b3b;
+    color: #ffeed0;
+    height: 100vh;
+    width: auto;
+}
+.buildYourBowlTextContainer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+.aboutMeSubtitle {
+    font-size: 1.4rem;
+    margin-bottom: 0px;
+    font-weight: 400;
+    margin-top: 2vh;
+}
+.aboutMeTitle {
+    font-size: 2.5rem;
+    margin-top: -8px;
+    font-weight: 600;
+    color: #ffeed0;
+}
+.aboutMeImage {
+    width: 300px;
+    height: auto;
+    border-radius: 15px;
+    border: #ffeed0 solid 1px;
+    margin-top: 10px;
+    align-self: flex-start;
+    justify-content: flex-start;
+}
